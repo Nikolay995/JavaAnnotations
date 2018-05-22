@@ -1,5 +1,7 @@
+package annotationWithParams;
+
 @MyAnnotation(param2 = " world!")
 public class AnotClass {
-    @MethodAnnotation
+    //@annotationWithParams.MethodAnnotation
     public void myMethod(){}
 }

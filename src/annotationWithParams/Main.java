@@ -1,3 +1,7 @@
+package annotationWithParams;
+
+import annotationWithParams.AnotClass;
+
 import java.lang.reflect.Method;
 
 public class Main {
@@ -11,8 +15,8 @@ public class Main {
 
             Method [] methods = cls.getMethods();
             for (Method method : methods) {
-                if (method.isAnnotationPresent(MethodAnnotation.class)){
-                    System.out.println("Method " + method.getName() + " is marked with MethodAnnotation");
+               if (method.isAnnotationPresent(annotationWithParams.MethodAnnotation.class)){
+                    System.out.println("Method " + method.getName() + " is marked with annotationWithParams.MethodAnnotation");
                 }
 
             }
